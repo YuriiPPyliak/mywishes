@@ -145,3 +145,37 @@ table {
 
 
 /*Project*/
+.header-box-1 {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
+}
+
+.logo {
+    font-family: 'Baloo 2';
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 48px;
+    color: #01ACB4;
+    margin: 40px auto 40px 80px;
+}
+
+.letter {
+    text-transform: uppercase;
+}
+
+.nav {
+    margin: 40px 130px 40px 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #01ACB4;
+    margin: 0 25px;
+}
