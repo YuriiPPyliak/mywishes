@@ -172,21 +172,20 @@ table {
 }
 
 .nav-link {
+    border: none;
+    padding: 9px 20px;
+    border-radius: 20px;
     text-decoration: none;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     color: #01ACB4;
-    margin: 0 25px;
 }
 
 .nav-link:hover {
-    border: none;
-    padding: 9px 20px;
-    border-radius: 20px;
     background: #01ACB4;
     color: #fff;
-    transition: 0.4s ease;
+    transition: 0.4s ease-in-out;
 }
 
 /* Навігаційна адаптивна панель для мобільних */
