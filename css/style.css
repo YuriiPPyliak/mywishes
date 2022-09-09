@@ -188,3 +188,52 @@ table {
     color: #fff;
     transition: 0.4s;
 }
+
+/* Навігаційна адаптивна панель для мобільних */
+.adaptive {
+    display: none;
+}
+
+.background {
+    margin: 0 auto;
+    padding: 30px 0;
+    max-width: 375px;
+    background: linear-gradient(180deg, rgba(120, 124, 133, 0) 0%, #787C85 100%);
+}
+
+.nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #787C85;
+    max-width: 375px;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 30px 45px;
+}
+
+.mobile-link {
+    text-decoration: none;
+}
+
+svg:hover * {
+    fill: #0B0B0B;
+}
+
+.nav-mobile:after {
+    content: "";
+    display: block;
+    width: 135px;
+    height: 5px;
+    border-radius: 20px;
+    background: #0B0B0B;
+    position: absolute;
+    left: 33%;
+    bottom: 0;
+    margin: 0 0 8px;
+}
+
+.nav-mobile:hover:after {
+    background: #01ACB4;
+    transition: 0.4s ease;
+}
