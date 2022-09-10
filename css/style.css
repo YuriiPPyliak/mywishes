@@ -217,7 +217,7 @@ table {
 }
 
 svg:hover * {
-    fill: #0B0B0B;
+    fill: #1F3865;
 }
 
 .nav-mobile:after {
@@ -237,6 +237,7 @@ svg:hover * {
     background: #01ACB4;
     transition: 0.4s ease;
 }
+
 
 /* < !-- Titles --> */
 .box-title {
