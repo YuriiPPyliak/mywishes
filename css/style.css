@@ -241,7 +241,7 @@ table {
 
 /* Навігаційна адаптивна панель для мобільних */
 .adaptive {
-    display: none;
+    display: block;
 }
 
 .background {
