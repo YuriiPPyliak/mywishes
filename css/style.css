@@ -145,8 +145,12 @@ table {
 
 
 /*Project*/
+.content-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .header-box-1 {
-    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -197,7 +201,6 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1440px;
     margin: 0 auto;
     background: #4B5056;
     gap: 30px;
@@ -208,7 +211,6 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1440px;
     margin: 0 auto;
     background: #787C85;
     gap: 30px;
