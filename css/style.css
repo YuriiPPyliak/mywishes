@@ -189,6 +189,56 @@ table {
     transition: 0.4s ease-in-out;
 }
 
+
+/* < !-- Titles --> */
+.box-title-1,
+.box-title-2,
+.box-title-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #4B5056;
+    gap: 30px;
+}
+
+.box-title-3,
+.box-title-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #787C85;
+    gap: 30px;
+}
+
+.ellipse-1 {
+    background: #787C85;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+}
+
+.ellipse-2 {
+    background: #787C85;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+}
+
+.item {
+    font-family: 'Baloo 2';
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 64px;
+    color: #01ACB4;
+}
+
+
 /* Навігаційна адаптивна панель для мобільних */
 .adaptive {
     display: none;
@@ -236,40 +286,4 @@ svg:hover * {
 .nav-mobile:hover:after {
     background: #01ACB4;
     transition: 0.4s ease;
-}
-
-
-/* < !-- Titles --> */
-.box-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1440px;
-    margin: 0 auto;
-    background: #4B5056;
-    gap: 30px;
-}
-
-.ellipse-1 {
-    background: #787C85;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    mix-blend-mode: multiply;
-}
-
-.ellipse-2 {
-    background: #787C85;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    mix-blend-mode: multiply;
-}
-
-.item {
-    font-family: 'Baloo 2';
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 64px;
-    color: #01ACB4;
 }
