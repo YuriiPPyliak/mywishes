@@ -152,21 +152,13 @@ table {
 
 .header-box-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 	flex-wrap: wrap;
     margin: 0 auto 50px;
     background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
 }
 
-.logo {
-    font-family: 'Baloo 2';
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 48px;
-    color: #01ACB4;
-    margin: 40px auto 40px 80px;
-}
 
 .letter {
     text-transform: uppercase;
