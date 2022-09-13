@@ -260,7 +260,7 @@ table {
     text-decoration: none;
 }
 
-svg:hover * {
+.mobile-link:hover svg * {
     fill: #1F3865;
 }
 
@@ -280,4 +280,32 @@ svg:hover * {
 .nav-mobile:hover:after {
     background: #01ACB4;
     transition: 0.4s ease;
+}
+
+
+/* Footer */
+.footer-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #787c85;
+}
+
+.logo {
+    font-family: 'Baloo 2';
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 48px;
+    color: #01ACB4;
+    padding: 40px 0 40px 80px;
+}
+
+.footer-nav {
+    max-width: 1280px;
+    padding: 36px 80px 36px 0;
+}
+
+.footer-link {
+    margin-right: 5px;
 }
