@@ -145,11 +145,6 @@ table {
 
 
 /*Project*/
-.content-wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
 .header-box-1 {
     display: flex;
     justify-content: space-between;
@@ -291,7 +286,7 @@ table {
     background: #787c85;
 }
 
-.logo {
+.footer-logo {
     font-family: 'Baloo 2';
     font-weight: 800;
     font-size: 30px;
