@@ -171,6 +171,7 @@ table {
 .header-box-1 {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto 80px;
@@ -231,13 +232,9 @@ table {
 
 .header-box-1 {
     display: flex;
-    >>>>>>>ee742f8d5bc2f480d59161ba72b3d4234e9a757f flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0 auto 50px;
     align-items: center;
-}
-
-.letter {
-    text-transform: uppercase;
 }
 
 .nav {
