@@ -154,6 +154,7 @@ table {
 .header {
     background: #4B5056;
     margin: 0 auto;
+    padding-bottom: 160px;
 }
 
 .header-wrapper {
@@ -165,6 +166,15 @@ table {
 .menu-block {
     top: 0;
     position: sticky;
+    background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
+}
+
+.header-box-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 80px;
     background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
 }
 
