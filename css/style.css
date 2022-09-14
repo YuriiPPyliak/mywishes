@@ -160,7 +160,7 @@ table {
   position: sticky; 
   background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
 }
-h1 {   
+.logo-name {   
   color: #01ACB4; 
   margin: 40px 80px;
   font-family:'Baloo 2';
