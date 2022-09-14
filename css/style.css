@@ -166,7 +166,6 @@ table {
 .menu-block {
     top: 0;
     position: sticky;
-    background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
 }
 
 .header-box-1 {
@@ -177,6 +176,7 @@ table {
     margin: 0 auto 80px;
     background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
 }
+
 
 .logo-name {
     color: #01ACB4;
