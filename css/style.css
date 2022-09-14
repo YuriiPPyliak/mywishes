@@ -356,6 +356,42 @@ table {
     transition: 0.4s ease;
 }
 
+/*Wishlist*/
+.wishlist-box {
+    background: #787c85;
+    
+}
+
+.wishlist-cards-1,
+.wishlist-cards-2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    max-width: 1280px;
+}
+
+.card {
+    margin: 30px;
+    border-radius: 6px;
+}
+
+.wishlist-img {
+    max-width: 386px;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px; 
+}
+
+.wishlist-img:hover {
+    opacity: 0.3;
+    padding: 0;
+}
+
+.card:hover {
+    background: #01acb4;
+}
+
+
 
 /* Footer */
 .footer-box {
