@@ -360,6 +360,10 @@ table {
 /* Стили блок названия и время */
 .head-section {
     background-color: #4B5056;
+    max-width: 860px;
+    border: 2px solid red;
+    /* margin убрать потом */
+    margin-top: 100px;
 }
 .head-desc {
     color: #01ACB4;
@@ -373,6 +377,7 @@ table {
     font-family: 'Baloo 2';
     font-weight: 800;
     font-size: 80px;
+    line-height: 128px;
 }
 .my-bd {
     color: #01ACB4;
@@ -389,7 +394,10 @@ table {
     width: 318px;
     height: 318px;
     border-radius: 50%;
-    background-color: #232324;
+    background-color: #343436;
+    margin-left: 170px;
+    position: relative;
+    margin-right: 65px;
 }
 .away {
     width: 130px;
@@ -399,7 +407,11 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #363696;
+    background-color: #343436;
+    position: absolute;
+    right: -65px;
+    bottom: 0;
+    mix-blend-mode: hard-light;
 }
 .away-title {
     color: #01ACB4;
@@ -408,3 +420,10 @@ table {
     font-weight: 400;
     font-size: 20px;
 }
+.time {
+    margin-top: 12px;
+    display: flex;
+    justify-content: end;
+    isolation: isolate;
+}
+
