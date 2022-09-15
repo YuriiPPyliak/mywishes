@@ -145,11 +145,6 @@ table {
 
 
 /*Project*/
-.header-box-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .header {
     background: #4B5056;
@@ -230,16 +225,9 @@ table {
     -webkit-border-radius: 25px;
 }
 
-.header-box-1 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto 50px;
-    align-items: center;
-}
 
 .nav {
     margin: 40px 130px 40px 0;
-
 }
 
 .nav-link {
@@ -257,6 +245,76 @@ table {
     background: #01ACB4;
     color: #fff;
     transition: 0.4s ease-in-out;
+}
+
+/* Стили блок названия и время */
+.head-section {
+    background-color: #4B5056;
+    max-width: 860px;
+    border: 2px solid red;
+    /* margin убрать потом */
+    margin-top: 100px;
+}
+.head-desc {
+    color: #01ACB4;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+.head-title {
+    color: #01ACB4;
+    font-family: 'Baloo 2';
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 128px;
+}
+.my-bd {
+    color: #01ACB4;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 318px;
+    height: 318px;
+    border-radius: 50%;
+    background-color: #343436;
+    margin-left: 170px;
+    position: relative;
+    margin-right: 65px;
+}
+.away {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #343436;
+    position: absolute;
+    right: -65px;
+    bottom: 0;
+    mix-blend-mode: hard-light;
+}
+.away-title {
+    color: #01ACB4;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.time {
+    margin-top: 12px;
+    display: flex;
+    justify-content: end;
+    isolation: isolate;
 }
 
 
@@ -357,73 +415,59 @@ table {
 }
 
 
-/* Стили блок названия и время */
-.head-section {
-    background-color: #4B5056;
-    max-width: 860px;
-    border: 2px solid red;
-    /* margin убрать потом */
-    margin-top: 100px;
+/* Wishlist Cards */
+.wishlist-box {
+    background: #787c85;
 }
-.head-desc {
-    color: #01ACB4;
-    font-family: 'Nunito';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
+
+.wishlist-cards-1,
+.wishlist-cards-2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    max-width: 1280px;
 }
-.head-title {
-    color: #01ACB4;
+
+.card {
+    margin: 30px;
+}
+
+.wishlist-img {
+    max-width: 386px;
+    max-height: 386px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+
+/* Footer */
+.footer-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #787c85;
+}
+
+.footer-logo {
     font-family: 'Baloo 2';
     font-weight: 800;
-    font-size: 80px;
-    line-height: 128px;
-}
-.my-bd {
+    font-size: 30px;
+    line-height: 48px;
     color: #01ACB4;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
+    padding: 40px 0 40px 80px;
 }
-.data {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 318px;
-    height: 318px;
-    border-radius: 50%;
-    background-color: #343436;
-    margin-left: 170px;
-    position: relative;
-    margin-right: 65px;
+
+.footer-nav {
+    max-width: 1280px;
+    padding: 36px 80px 36px 0;
 }
-.away {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #343436;
-    position: absolute;
-    right: -65px;
-    bottom: 0;
-    mix-blend-mode: hard-light;
+
+.footer-link {
+    margin-right: 5px;
 }
-.away-title {
-    color: #01ACB4;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-}
-.time {
-    margin-top: 12px;
-    display: flex;
-    justify-content: end;
-    isolation: isolate;
-}
+
+
+
 
