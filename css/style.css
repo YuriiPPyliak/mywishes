@@ -439,6 +439,15 @@ table {
     border-radius: 6px;
 }
 
+.wishlist-img:hover {
+	opacity: 0.3;
+	padding: 0;
+}
+
+.card:hover {
+	background: #01acb4;
+}
+
 
 
 /* Footer */
