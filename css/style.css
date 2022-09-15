@@ -255,6 +255,7 @@ table {
     /* margin убрать потом */
     margin-top: 100px;
 }
+
 .head-desc {
     color: #01ACB4;
     font-family: 'Nunito';
@@ -262,6 +263,7 @@ table {
     font-size: 20px;
     line-height: 28px;
 }
+
 .head-title {
     color: #01ACB4;
     font-family: 'Baloo 2';
@@ -269,6 +271,7 @@ table {
     font-size: 80px;
     line-height: 128px;
 }
+
 .my-bd {
     color: #01ACB4;
     font-family: 'Nunito';
@@ -276,6 +279,7 @@ table {
     font-weight: 400;
     font-size: 20px;
 }
+
 .data {
     display: flex;
     flex-direction: column;
@@ -289,6 +293,7 @@ table {
     position: relative;
     margin-right: 65px;
 }
+
 .away {
     width: 130px;
     height: 130px;
@@ -303,6 +308,7 @@ table {
     bottom: 0;
     mix-blend-mode: hard-light;
 }
+
 .away-title {
     color: #01ACB4;
     font-family: 'Nunito';
@@ -310,6 +316,7 @@ table {
     font-weight: 400;
     font-size: 20px;
 }
+
 .time {
     margin-top: 12px;
     display: flex;
@@ -424,6 +431,8 @@ table {
 .wishlist-cards-2 {
     display: flex;
     justify-content: center;
+    margin: 0 50px;
+    max-width: 1280px;
 }
 
 .card {
@@ -434,6 +443,7 @@ table {
 .wishlist-img {
     max-width: 386px;
     height: 100%;
+    max-height: 386px;
     width: 100%;
     border-radius: 6px;
 }
@@ -445,10 +455,13 @@ table {
 
 .card:hover {
     background: #01acb4;
+    =======opacity: 0.3;
+    padding: 0;
 }
 
-
-
+.card:hover {
+    background: #01acb4;
+}
 
 /* Footer */
 .footer-box {
@@ -476,7 +489,3 @@ table {
 .footer-link {
     margin-right: 5px;
 }
-
-
-
-
