@@ -289,3 +289,56 @@ svg:hover * {
     background: #01ACB4;
     transition: 0.4s ease;
 }
+
+
+/* Стили блок названия и время */
+.head-section {
+    background-color: #4B5056;
+}
+.head-desc {
+    color: #01ACB4;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+.head-title {
+    color: #01ACB4;
+    font-family: 'Baloo 2';
+    font-weight: 800;
+    font-size: 80px;
+}
+.my-bd {
+    color: #01ACB4;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 318px;
+    height: 318px;
+    border-radius: 50%;
+    background-color: #232324;
+}
+.away {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #363696;
+}
+.away-title {
+    color: #01ACB4;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
