@@ -149,8 +149,7 @@ table {
 .header {
     background: #4B5056;
     margin: 0 auto;
-    padding-bottom: 160px;
-}
+    }
 
 .header-wrapper {
     background: url(../img/bg-img.png) no-repeat;
@@ -499,7 +498,12 @@ table {
     .header-wrapper {
         background: none;
     }
-
+    .nav-link {
+       display: none; 
+     }   
+    .menu-block {
+     position: relative;   
+    }
     .logo {
         margin: -115px 20px;
         width: 60px;
@@ -518,4 +522,6 @@ table {
         gap: 10px;
         margin: 72px 30px;
     }
+     
+    
 }
