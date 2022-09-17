@@ -161,6 +161,7 @@ table {
 .menu-block {
     top: 0;
     position: sticky;
+    z-index: 2;
 }
 
 .header-box-1 {
@@ -205,6 +206,7 @@ table {
     text-align: center;
     margin: -54px 98px;
     gap: 21px;
+    z-index: 1;
 }
 
 .icon {
@@ -227,7 +229,9 @@ table {
 
 
 .nav {
-    margin: 40px 130px 40px 0;
+    margin: 0 151px 0 0;
+    display: flex;
+    justify-content: right;
 }
 
 .nav-link {
