@@ -205,7 +205,7 @@ table {
     text-align: center;
     margin: -54px 98px;
     gap: 21px;
-    z-index: 1;
+    z-index: 88;
 }
 
 .icon {
@@ -218,7 +218,7 @@ table {
     padding: 0px;
     text-decoration: none;
     text-align: center;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: normal;
     line-height: 2em;
     border-radius: 25px;
@@ -553,24 +553,26 @@ img {
      }  
  
     .menu-block {
-     position: relative;   
+       position: relative;   
     }
 
     .logo {
-        margin: -115px 20px;
-        width: 60px;
+        position: relative;
+        margin: -170px 20px;
         height: 60px;
         border: none;
+        z-index: 88;
     }
-
     .logo-name {
         font-size: 24px;
         line-height: 38px;
-        padding: 64px 90px;
+        padding: 64px 10px 0;
+        position: relative;
     }
-
-    .icons {
-        justify-content: right;
+    .icons {  
+        position: relative;
+        justify-content: end;
+        margin: 115px 20px 0;
         gap: 10px;
         margin: 72px 30px;
     } 
@@ -579,6 +581,7 @@ img {
     /*Navigation*/
     .footer-box {
         display: none;
+        
     }
 
     .adaptive {
