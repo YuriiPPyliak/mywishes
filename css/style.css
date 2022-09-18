@@ -375,63 +375,13 @@ table {
 }
 
 
-/* Навігаційна адаптивна панель для мобільних */
-.adaptive {
-    display: none;
-}
-
-.background {
-    margin: 0 auto;
-    padding: 30px 0;
-    max-width: 375px;
-    background: linear-gradient(180deg, rgba(120, 124, 133, 0) 0%, #787C85 100%);
-}
-
-.nav-mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #787C85;
-    max-width: 375px;
-    margin: 0 auto;
-    position: relative;
-    padding: 10px 30px 45px;
-}
-
-.mobile-link {
-    text-decoration: none;
-}
-
-.mobile-link:hover svg * {
-    fill: #1F3865;
-}
-
-.nav-mobile:after {
-    content: "";
-    display: block;
-    width: 135px;
-    height: 5px;
-    border-radius: 20px;
-    background: #0B0B0B;
-    position: absolute;
-    left: 33%;
-    bottom: 0;
-    margin: 0 0 8px;
-}
-
-.nav-mobile:hover:after {
-    background: #01ACB4;
-    transition: 0.4s ease;
-}
-
-
 /* Wishlist Cards */
 .wishlist-wrapper {
-    max-width: 1280px;
     margin: 0 auto;
 }
 
 .wishlist-box {
+    max-width: 100%;
     background-color: #787c85;
     display: flex;
     justify-content: center;
@@ -480,16 +430,24 @@ img {
     transition: all 0.7s ease;
 }
 
+/*.wishlist-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}*/
+
 .wishlist-content-wrapper svg {
-    margin: 30px 0 60px 0;
+    margin: 20px 0 60px 0;
 }
 
-.wish-title {
+.wishlist-title {
     font-family: 'Baloo 2';
     font-weight: 800;
     font-size: 30px;
     line-height: 120%;
     color: #FFFFFF;
+    margin: 60px auto 20px;
 }
 
 .wishlist-link {
@@ -498,7 +456,7 @@ img {
     font-size: 16px;
     line-height: 140%;
     text-decoration: none;
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
 /* Footer */
@@ -528,17 +486,76 @@ img {
     margin-right: 5px;
 }
 
+
+/* Навігаційна адаптивна панель для мобільних */
+.adaptive {
+    display: none;
+}
+
+.background {
+    margin: 0 auto;
+    padding: 30px 0;
+    max-width: 100%;
+    background: linear-gradient(180deg, rgba(120, 124, 133, 0) 0%, #787C85 100%);
+}
+
+.nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #787C85;
+    max-width: 767px;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 30px 45px;
+}
+
+.mobile-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mobile-link:hover svg * {
+    fill: #1F3865;
+}
+
+.nav-mobile:after {
+    content: "";
+    display: block;
+    width: 135px;
+    height: 5px;
+    border-radius: 20px;
+    background: #0B0B0B;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    margin: 0 0 8px;
+}
+
+.nav-mobile:hover:after {
+    background: #01ACB4;
+    transition: 0.4s ease;
+}
+
+.gradient-item {
+    font-size: 0;
+}
+
+
 /*Adaptive_Natali*/
 @media only screen and (max-width: 767px) {
     .header-wrapper {
         background: none;
     }
+
     .nav-link {
        display: none; 
-     }   
+     }  
+ 
     .menu-block {
      position: relative;   
     }
+
     .logo {
         margin: -115px 20px;
         width: 60px;
@@ -556,7 +573,21 @@ img {
         justify-content: right;
         gap: 10px;
         margin: 72px 30px;
+    } 
+
+    /*Ще тетстую Наталі адаптив*/
+
+    .footer-box {
+        display: none;
     }
-     
-    
+
+    .adaptive {
+        display: block;
+        position: sticky;
+        z-index: 0.8;
+        bottom: 0;
+    }
 }
+
+
+
