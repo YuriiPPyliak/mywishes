@@ -462,8 +462,9 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #787c85;
+    background: pink;
     padding-top: 210px;
+    position: relative;
 }
 
 .footer-logo {
@@ -473,6 +474,20 @@ img {
     line-height: 48px;
     color: #01ACB4;
     padding: 40px 0 40px 80px;
+}
+
+.footer-logo:after {
+    content: "";
+    display: block;
+    background: #787C85;
+    width: 408px;
+    height: 408px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    position: absolute;
+    z-index: 1;
+    bottom: -150px;
+    right:  32%;
 }
 
 .footer-nav {
