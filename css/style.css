@@ -145,17 +145,11 @@ table {
 
 
 /*Project*/
-.header-box-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .header {
     background: #4B5056;
     margin: 0 auto;
-    padding-bottom: 160px;
-}
+    }
 
 .header-wrapper {
     background: url(../img/bg-img.png) no-repeat;
@@ -166,6 +160,7 @@ table {
 .menu-block {
     top: 0;
     position: sticky;
+    z-index: 2;
 }
 
 .header-box-1 {
@@ -210,6 +205,7 @@ table {
     text-align: center;
     margin: -54px 98px;
     gap: 21px;
+    z-index: 88;
 }
 
 .icon {
@@ -222,7 +218,7 @@ table {
     padding: 0px;
     text-decoration: none;
     text-align: center;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: normal;
     line-height: 2em;
     border-radius: 25px;
@@ -230,16 +226,8 @@ table {
     -webkit-border-radius: 25px;
 }
 
-.header-box-1 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto 50px;
-    align-items: center;
-}
-
 .nav {
     margin: 40px 130px 40px 0;
-
 }
 
 .nav-link {
@@ -257,6 +245,83 @@ table {
     background: #01ACB4;
     color: #fff;
     transition: 0.4s ease-in-out;
+}
+
+/* Стили блок названия и время */
+.head-section {
+    background-color: #4B5056;
+    max-width: 860px;
+    border: 2px solid red;
+    /* margin убрать потом */
+    margin-top: 100px;
+}
+
+.head-desc {
+    color: #01ACB4;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.head-title {
+    color: #01ACB4;
+    font-family: 'Baloo 2';
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 128px;
+}
+
+.my-bd {
+    color: #01ACB4;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 318px;
+    height: 318px;
+    border-radius: 50%;
+    background-color: #343436;
+    margin-left: 170px;
+    position: relative;
+    margin-right: 65px;
+}
+
+.away {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #343436;
+    position: absolute;
+    right: -65px;
+    bottom: 0;
+    mix-blend-mode: hard-light;
+}
+
+.away-title {
+    color: #01ACB4;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.time {
+    margin-top: 12px;
+    display: flex;
+    justify-content: end;
+    isolation: isolate;
 }
 
 
@@ -307,6 +372,119 @@ table {
 }
 
 
+/* Wishlist Cards */
+.wishlist-wrapper {
+    margin: 0 auto;
+}
+
+.wishlist-box {
+    max-width: 100%;
+    background-color: #787c85;
+    display: flex;
+    justify-content: center;
+}
+
+.wishlist-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 30px;
+}
+
+.wishlist-card:hover img {
+    transform: scale(1.1);
+}
+
+.wishlist-card:hover .wishlist-content-wrapper {
+    opacity: 0.7;
+}
+
+img {
+    transition: transform 0.9s;
+}
+
+.img-wish {
+    max-width: 386px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 6px;
+}
+
+.wishlist-content-wrapper {
+    max-width: 386px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: block;
+    background: #01acb4;
+    border-radius: 6px;
+    transition: all 0.7s ease;
+}
+
+/*.wishlist-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.wishlist-content-wrapper svg {
+    margin: 20px 0 60px 0;
+}
+
+.wishlist-title {
+    font-family: 'Baloo 2';
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin: 60px auto 20px;
+}
+
+.wishlist-link {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Footer */
+.footer-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #787c85;
+    padding-top: 210px;
+}
+
+.footer-logo {
+    font-family: 'Baloo 2';
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 48px;
+    color: #01ACB4;
+    padding: 40px 0 40px 80px;
+}
+
+.footer-nav {
+    max-width: 1280px;
+    padding: 36px 80px 36px 0;
+}
+
+.footer-link {
+    margin-right: 5px;
+}
+
+
 /* Навігаційна адаптивна панель для мобільних */
 .adaptive {
     display: none;
@@ -315,7 +493,7 @@ table {
 .background {
     margin: 0 auto;
     padding: 30px 0;
-    max-width: 375px;
+    max-width: 100%;
     background: linear-gradient(180deg, rgba(120, 124, 133, 0) 0%, #787C85 100%);
 }
 
@@ -324,7 +502,7 @@ table {
     justify-content: space-between;
     align-items: center;
     background: #787C85;
-    max-width: 375px;
+    max-width: 767px;
     margin: 0 auto;
     position: relative;
     padding: 10px 30px 45px;
@@ -336,6 +514,7 @@ table {
 
 .mobile-link:hover svg * {
     fill: #1F3865;
+    cursor: pointer;
 }
 
 .nav-mobile:after {
@@ -346,7 +525,7 @@ table {
     border-radius: 20px;
     background: #0B0B0B;
     position: absolute;
-    left: 33%;
+    left: 40%;
     bottom: 0;
     margin: 0 0 8px;
 }
@@ -356,243 +535,73 @@ table {
     transition: 0.4s ease;
 }
 
-
-/* Стили блок названия и время */
-.head-section {
-    background-color: #4B5056;
-    max-width: 860px;
-    border: 2px solid red;
-    margin-top: 100px;
-}
-.head-desc {
-    color: #01ACB4;
-    font-family: 'Nunito';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-}
-.head-title {
-    color: #01ACB4;
-    font-family: 'Baloo 2';
-    font-weight: 800;
-    font-size: 80px;
-    line-height: 128px;
-}
-.my-bd {
-    color: #01ACB4;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-}
-.data {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 318px;
-    height: 318px;
-    border-radius: 50%;
-    background-color: #343436;
-    margin-left: 170px;
-    position: relative;
-    margin-right: 65px;
-}
-.away {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #343436;
-    position: absolute;
-    right: -65px;
-    bottom: 0;
-    mix-blend-mode: hard-light;
-}
-.away-title {
-    color: #01ACB4;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-}
-.time {
-    margin-top: 12px;
-    display: flex;
-    justify-content: end;
-    isolation: isolate;
+.gradient-item {
+    font-size: 0;
 }
 
-/* стили таймера отсчета времени */
-#timer {
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 38px;
-    color: #01ACB4;
-}
 
-/* названия секций */
-.title-section {
-    font-family: 'Baloo 2';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 64px;
-    color: #01ACB4; 
-}
+/*Adaptive_Natali*/
+@media only screen 
+and (max-width: 767px) {
+    .header-wrapper {
+        background: none;
+    }
 
-/* блок dreams style */
-.wrapper-section {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    padding: 40px 0 40px 0;
-    background-color: #4B5056;
-}
-.block-dreams {
-    background-color: #4B5056;
-}
-.name-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.name-section:before,
-.name-section:after {
-    content: '';
-    display: inline-block;
-    margin: 0 30px;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: rgb(13, 0, 255);
-}
-.img-dreams {
-    width: 326px;
-    height: 200px;
-    margin: 30px 30px 0;
-}
-.card-dreams:hover .img-dreams {
-    cursor: pointer;
-    width: 386px;
-    height: 230px;
-    margin: 0;
-    border-radius: 5px 5px 0 0;
-}
-.card-dreams:hover .desc-dreams {
-    background-color: #01ACB4;
-    color: white;
-    cursor: pointer;
-}
-.desc-dreams {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    color: #01ACB4;
-    padding: 30px;
-}
-.card-dreams {
-    display: inline-block;
-    background: #787C85;
-    border-radius: 5px;
-    position: relative;
-}
-.like {
-    display: none;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-}
-.card-dreams:hover .like {
-    display: block;
-    cursor: pointer;
-}
-/* блок brands style */
-.card-brands {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    color: #01ACB4;
-    position: relative;
-}
-.desc-brands {
-    padding: 20px;
-}
-.like-star {
-    display: none;
-} 
-.card-brands:hover .like-star {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-}
-.img-brands {
-    padding: 20px;
-}
-.card-brands:hover .img-brands {
-    width: 200px;
-    height: 200px;
-    padding: 0;
-    cursor: pointer;
-}
-.card-brands:hover .desc-brands {
-    background-color: #01ACB4;
-    color: white;
-    cursor: pointer;
-}
-/* адаптив dreams and brands */
-@media only screen
-and (min-width: 320px)
-and (max-width: 767px)  {
-    .wrapper-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
+    .nav-link {
+       display: none; 
+     }  
+ 
+    .menu-block {
+       position: relative;   
     }
-    .img-dreams {
-        width: 275px;
-        height: 200px;
+
+    .logo {
+        position: relative;
+        margin: -170px 20px;
+        height: 60px;
+        border: none;
+        z-index: 88;
     }
-    .card-dreams {
-        margin-bottom: 60px;
+    .logo-name {
+        font-size: 24px;
+        line-height: 38px;
+        padding: 64px 10px 0;
+        position: relative;
     }
-    .card-dreams:hover .img-dreams {
-        width: 335px;
-        height: 230px;
-    }
-    .card-brands {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-    .img-brands {
-        width: 80px;
-        height: 80px;
-        padding: 0;
-    }
-    .desc-brands {
-        padding: 30px;
-        width: 100%;
-    }
-    .card-brands:hover .img-brands {
-        width: 80px;
-        height: 80px;
-    }
-    .card-brands:hover .like-star {
+    .icons {  
+        position: relative;
+        justify-content: end;
+        margin: 115px 20px 0;
+        gap: 10px;
+        margin: 72px 30px;
+    } 
+
+    
+    /*Navigation*/
+    .footer-box {
         display: none;
     }
 
+    .adaptive {
+        display: block;
+        position: sticky;
+        z-index: 0.8;
+        bottom: 0;
+    }
+    /*Wishlist*/
+    .wishlist-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wishlist-link {
+        position: absolute;
+        left: 0;
+    }   
+
+    
 }
+
+
+
