@@ -161,6 +161,9 @@ table {
     top: 0;
     position: sticky;
     z-index: 2;
+    margin: 0 auto;
+    width: 100%;
+    background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
 }
 
 .header-box-1 {
@@ -170,7 +173,7 @@ table {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto 80px;
-    background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
+    max-width: 1440px;
 }
 
 
