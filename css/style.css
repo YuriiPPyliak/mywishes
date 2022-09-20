@@ -149,12 +149,18 @@ table {
 .header {
     background: #4B5056;
     margin: 0 auto;
-    }
+}
+
+.header-content {
+    max-width 1360;
+    display:flex;
+    margin: 0 auto;
+}
 
 .header-wrapper {
     background: url(../img/bg-img.png) no-repeat;
-    background-position: 80px 137px;
-    background-size: 540px 623px;
+    background-position: 10px 0;
+    background-size: 540px 623px; 
 }
 
 .menu-block {
@@ -187,13 +193,9 @@ table {
     text-align: left;
 }
 
-.logo-block {
-    max-width: 820px;
-}
-
 .logo {
     display: flex;
-    margin: 100px 180px;
+    margin: 80px;
     border: 8px solid #01ACB4;
     height: 460px;
     width: 460px;
@@ -206,7 +208,7 @@ table {
 .icons {
     display: flex;
     text-align: center;
-    margin: -54px 98px;
+    margin: 54px 98px;
     gap: 21px;
     z-index: 88;
 }
@@ -254,9 +256,9 @@ table {
 .head-section {
     background-color: #4B5056;
     max-width: 860px;
-    border: 2px solid red;
+    margin-right: 40px;
     /* margin убрать потом */
-    margin-top: 100px;
+    /*margin-top: 100px;*/
 }
 
 .head-desc {
