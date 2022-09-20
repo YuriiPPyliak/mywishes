@@ -202,15 +202,7 @@ table {
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    animation: mymove 10s infinite;
 }
-
-@keyframes mymove {
-    25% {
-        transform: rotate(360deg);
-    }
-}
-
 
 .icons {
     display: flex;
@@ -1035,7 +1027,10 @@ img {
     .wishlist-link {
         position: absolute;
         left: 0;
+    }
 
+    .logo-animation {
+        display: none;
     }
 
 
