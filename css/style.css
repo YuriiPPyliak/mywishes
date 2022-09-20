@@ -334,8 +334,155 @@ table {
     justify-content: end;
     isolation: isolate;
 }
-
-
+/* блок dreams style */
+.wrapper-section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 0 40px 0;
+    background-color: #4B5056;
+}
+.block-dreams {
+    background-color: #4B5056;
+}
+.name-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-section:before,
+.name-section:after {
+    content: '';
+    display: inline-block;
+    margin: 0 30px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgb(13, 0, 255);
+}
+.img-dreams {
+    width: 326px;
+    height: 200px;
+    margin: 30px 30px 0;
+}
+.card-dreams:hover .img-dreams {
+    cursor: pointer;
+    width: 386px;
+    height: 230px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+.card-dreams:hover .desc-dreams {
+    background-color: #01ACB4;
+    color: white;
+    cursor: pointer;
+}
+.desc-dreams {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #01ACB4;
+    padding: 30px;
+}
+.card-dreams {
+    display: inline-block;
+    background: #787C85;
+    border-radius: 5px;
+    position: relative;
+}
+.like {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.card-dreams:hover .like {
+    display: block;
+    cursor: pointer;
+}
+/* блок brands style */
+.card-brands {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #01ACB4;
+    position: relative;
+}
+.desc-brands {
+    padding: 20px;
+}
+.like-star {
+    display: none;
+} 
+.card-brands:hover .like-star {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.img-brands {
+    padding: 20px;
+}
+.card-brands:hover .img-brands {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    cursor: pointer;
+}
+.card-brands:hover .desc-brands {
+    background-color: #01ACB4;
+    color: white;
+    cursor: pointer;
+}
+/* адаптив dreams and brands */
+@media only screen
+and (min-width: 320px)
+and (max-width: 767px)  {
+    .wrapper-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .img-dreams {
+        width: 275px;
+        height: 200px;
+    }
+    .card-dreams {
+        margin-bottom: 60px;
+    }
+    .card-dreams:hover .img-dreams {
+        width: 335px;
+        height: 230px;
+    }
+    .card-brands {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .img-brands {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+    .desc-brands {
+        padding: 30px;
+        width: 100%;
+    }
+    .card-brands:hover .img-brands {
+        width: 80px;
+        height: 80px;
+    }
+    .card-brands:hover .like-star {
+        display: none;
+    }
+}
 /* < !-- Titles --> */
 .box-title-1,
 .box-title-2,
@@ -652,6 +799,3 @@ and (max-width: 767px) {
     }   
     
 }
-
-
-
