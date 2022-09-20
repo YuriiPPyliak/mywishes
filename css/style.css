@@ -350,15 +350,15 @@ table {
 .wrapper-section {
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     padding: 40px 0 40px 0;
     background-color: #4B5056;
 }
-.block-dreams {
-    background-color: #4B5056;
-}
-.name-section {
+
+/* стили к шариками псевдоэлемент */
+/* .name-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,7 +372,7 @@ table {
     height: 48px;
     border-radius: 50%;
     background-color: rgb(13, 0, 255);
-}
+} */
 .img-dreams {
     width: 326px;
     height: 200px;
