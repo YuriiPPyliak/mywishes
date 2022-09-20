@@ -537,6 +537,7 @@ table {
     gap: 30px;
     padding-top: 59px;
 
+
 }
 
 .box-title-3,
@@ -593,6 +594,13 @@ table {
     margin: 0 81px;
     display: flex;
     justify-content: space-between;
+    background: #787c85;  
+  }
+.ideas {
+   padding: 38px 0 100px; 
+  margin:  0 81px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .idea-card {
@@ -662,6 +670,7 @@ table {
 .b-ideas-wrapper {
     background: #4B5056;
     padding: 38px 0 100px;
+    background: #4B5056; 
 }
 
 .b-idea-card {
@@ -972,6 +981,7 @@ and (max-width: 767px)   {
         right: 0;
 
         gap: 10px;
+        z-index: 4;
         
     }
 
