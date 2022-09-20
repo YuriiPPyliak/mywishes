@@ -591,10 +591,10 @@ table {
 }
 
 .ideas {
+    padding: 38px 0 100px;
     margin: 0 81px;
     display: flex;
     justify-content: space-between;
-    background: #787c85;  
 }
 
 
@@ -665,7 +665,7 @@ table {
 .b-ideas-wrapper {
     background: #4B5056;
     padding: 38px 0 100px;
-    
+
 }
 
 .b-idea-card {
@@ -927,9 +927,7 @@ img {
 
 /*Adaptive_Natali*/
 
-@media only screen 
-and (min-width: 320px)
-and (max-width: 767px)   {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
 
     .header-wrapper {
         background: none;
@@ -969,7 +967,7 @@ and (max-width: 767px)   {
         margin: 115px 20px 0;
     }
 
-    .icons {  
+    .icons {
         position: absolute;
         margin: 60px 30px;
         top: 0;
@@ -977,7 +975,7 @@ and (max-width: 767px)   {
 
         gap: 10px;
         z-index: 4;
-        
+
     }
 
     .item,
@@ -1038,8 +1036,8 @@ and (max-width: 767px)   {
         position: absolute;
         left: 0;
 
-    }   
-    
+    }
+
 
 
 }
