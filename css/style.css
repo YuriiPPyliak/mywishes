@@ -509,6 +509,7 @@ and (max-width: 767px)  {
     gap: 30px;
     padding-top: 59px;
 
+
 }
 
 .box-title-3,
@@ -556,10 +557,10 @@ and (max-width: 767px)  {
 }
 /*------------------ Ideas Cards ----------------*/
 .ideas-wrapper {
-  background: #787c85; 
-  padding: 38px 0 100px; 
+  background: #787c85;  
   }
 .ideas {
+   padding: 38px 0 100px; 
   margin:  0 81px;
   display: flex;
   justify-content: space-between;
@@ -622,7 +623,7 @@ and (max-width: 767px)  {
 /*---------bad ideas------*/
 .b-ideas-wrapper {
   background: #4B5056; 
-  padding: 38px 0 100px; 
+  
 }
 .b-idea-card {
   flex: 0 0 30%;
