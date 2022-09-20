@@ -915,6 +915,7 @@ and (max-width: 767px)   {
         top: 0;
         right: 0;
         gap: 10px;
+        z-index: 4;
         
     }
     .item,.item-2
