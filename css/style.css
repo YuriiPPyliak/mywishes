@@ -350,7 +350,7 @@ table {
 .wrapper-section {
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 40px 0 40px 0;
     background-color: #4B5056;
