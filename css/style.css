@@ -348,9 +348,9 @@ table {
 
 /* блок dreams style */
 .wrapper-section {
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
     align-items: center;
     padding: 40px 0 40px 0;
     background-color: #4B5056;
