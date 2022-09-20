@@ -351,15 +351,19 @@ table {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     padding: 40px 0 40px 0;
     background-color: #4B5056;
 }
+
 
 .block-dreams {
     background-color: #4B5056;
 }
 
-.name-section {
+
+/* стили к шариками псевдоэлемент */
+/* .name-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,7 +378,8 @@ table {
     height: 48px;
     border-radius: 50%;
     background-color: rgb(13, 0, 255);
-}
+}*/
+
 
 .img-dreams {
     width: 326px;
@@ -576,9 +581,6 @@ table {
     font-size: 40px;
     line-height: 64px;
     color: #fff;
-
-
-
 }
 
 /*------------------ Ideas Cards ----------------*/
@@ -920,7 +922,11 @@ img {
 
 
 /*Adaptive_Natali*/
-@media only screen and (max-width: 767px) {
+
+@media only screen 
+and (min-width: 320px)
+and (max-width: 767px)   {
+
     .header-wrapper {
         background: none;
     }
@@ -934,8 +940,10 @@ img {
     }
 
     .logo {
-        position: relative;
-        margin: -170px 20px;
+        position: absolute;
+        margin: 54px 20px;
+        top: 0;
+        left: 0;
         height: 60px;
         border: none;
         z-index: 5;
@@ -944,16 +952,27 @@ img {
     .logo-name {
         font-size: 24px;
         line-height: 38px;
-        padding: 64px 10px 0;
-        position: relative;
+        position: absolute;
+        margin: 64px 90px;
+        top: 0;
+        left: 0;
     }
+
 
     .icons {
         position: relative;
         justify-content: end;
         margin: 115px 20px 0;
+    }
+
+    .icons {  
+        position: absolute;
+        margin: 60px 30px;
+        top: 0;
+        right: 0;
+
         gap: 10px;
-        margin: 72px 30px;
+        
     }
 
     .item,
