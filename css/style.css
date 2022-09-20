@@ -149,18 +149,27 @@ table {
 .header {
     background: #4B5056;
     margin: 0 auto;
-    }
+}
+
+.header-content {
+    max-width 1360;
+    display:flex;
+    margin: 0 auto;
+}
 
 .header-wrapper {
     background: url(../img/bg-img.png) no-repeat;
-    background-position: 80px 137px;
-    background-size: 540px 623px;
+    background-position: 10px 0;
+    background-size: 540px 623px; 
 }
 
 .menu-block {
     top: 0;
     position: sticky;
     z-index: 2;
+    margin: 0 auto;
+    width: 100%;
+    background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
 }
 
 .header-box-1 {
@@ -170,7 +179,7 @@ table {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto 80px;
-    background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
+    max-width: 1440px;
 }
 
 
@@ -184,26 +193,28 @@ table {
     text-align: left;
 }
 
-.logo-block {
-    max-width: 820px;
-}
-
 .logo {
     display: flex;
-    margin: 100px 180px;
+    margin: 80px;
     border: 8px solid #01ACB4;
     height: 460px;
     width: 460px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-
+    animation: mymove 10s infinite;
 }
+
+@keyframes mymove {
+        25% {transform: rotate(360deg);
+    }
+}
+
 
 .icons {
     display: flex;
     text-align: center;
-    margin: -54px 98px;
+    margin: 54px 98px;
     gap: 21px;
     z-index: 88;
 }
@@ -226,11 +237,8 @@ table {
     -webkit-border-radius: 25px;
 }
 
-
 .nav {
-    margin: 0 151px 0 0;
-    display: flex;
-    justify-content: right;
+    margin: 40px 130px 40px 0;
 }
 
 .nav-link {
@@ -254,9 +262,9 @@ table {
 .head-section {
     background-color: #4B5056;
     max-width: 860px;
-    border: 2px solid red;
+    margin-right: 40px;
     /* margin убрать потом */
-    margin-top: 100px;
+    /*margin-top: 100px;*/
 }
 
 .head-desc {
@@ -591,11 +599,15 @@ img {
 
 /* Footer */
 .footer-box {
+    margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #787c85;
+    background: #787C85;
+    padding-top: 210px;
+    position: relative;
+    overflow: hidden;
 }
 
 .footer-logo {
@@ -607,6 +619,38 @@ img {
     padding: 40px 0 40px 80px;
 }
 
+.letter {
+    text-transform: uppercase;
+}
+
+.footer-logo:before {
+    content: "";
+    display: block;
+    background: #787C85;
+    width: 408px;
+    height: 408px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    position: absolute;
+    z-index: 1;
+    bottom: -170px;
+    right:  35%;
+}
+
+.footer-logo:first-child:after {
+    content: "";
+    display: block;
+    background: #787C85;
+    width: 167px;
+    height: 167px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    position: absolute;
+    z-index: 1;
+    bottom: 70px;
+    right:  28%;
+}
+
 .footer-nav {
     max-width: 1280px;
     padding: 36px 80px 36px 0;
@@ -614,6 +658,7 @@ img {
 
 .footer-link {
     margin-right: 5px;
+    text-decoration: none;
 }
 
 
@@ -642,11 +687,11 @@ img {
 
 .mobile-link {
     text-decoration: none;
-    cursor: pointer;
 }
 
 .mobile-link:hover svg * {
     fill: #1F3865;
+    cursor: pointer;
 }
 
 .nav-mobile:after {
@@ -673,7 +718,8 @@ img {
 
 
 /*Adaptive_Natali*/
-@media only screen and (max-width: 767px) {
+@media only screen 
+and (max-width: 767px) {
     .header-wrapper {
         background: none;
     }
@@ -733,9 +779,12 @@ img {
     }
     
     /*Navigation*/
+    .wishlist-wrapper {
+        margin: 0 auto;
+    }
+
     .footer-box {
         display: none;
-        
     }
 
     .adaptive {
@@ -744,6 +793,19 @@ img {
         z-index: 8;
         bottom: 0;
     }
+    /*Wishlist*/
+    .wishlist-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wishlist-link {
+        position: absolute;
+        left: 0;
+    }   
+
+    
 }
 
 
