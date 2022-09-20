@@ -341,11 +341,10 @@ table {
     justify-content: end;
     isolation: isolate;
 }
-<<<<<<< HEAD
 
 
 /* < !-----------------Titles -----------------> */
-=======
+
 /* блок dreams style */
 .wrapper-section {
     display: flex;
@@ -496,7 +495,6 @@ and (max-width: 767px)  {
     }
 }
 /* < !-- Titles --> */
->>>>>>> 1ec70724744073eeaacdaace2cb5b52493c9c98d
 .box-title-1,
 .box-title-2,
 .box-title-4 
