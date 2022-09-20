@@ -589,15 +589,8 @@ table {
     background: #787c85;
     padding: 38px 0 100px;
 }
-
 .ideas {
-    margin: 0 81px;
-    display: flex;
-    justify-content: space-between;
-    background: #787c85;  
-  }
-.ideas {
-   padding: 38px 0 100px; 
+  padding: 38px 0 100px; 
   margin:  0 81px;
   display: flex;
   justify-content: space-between;
