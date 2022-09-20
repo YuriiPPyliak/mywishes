@@ -595,13 +595,8 @@ table {
     display: flex;
     justify-content: space-between;
     background: #787c85;  
-  }
-.ideas {
-   padding: 38px 0 100px; 
-  margin:  0 81px;
-  display: flex;
-  justify-content: space-between;
 }
+
 
 .idea-card {
     flex: 0 0 30%;
@@ -670,7 +665,7 @@ table {
 .b-ideas-wrapper {
     background: #4B5056;
     padding: 38px 0 100px;
-    background: #4B5056; 
+    
 }
 
 .b-idea-card {
